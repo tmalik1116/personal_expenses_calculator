@@ -29,7 +29,19 @@ def relative_spending(percentage, week: int, weeks: int):
 def expenses_percentage(total, spending):
     return (spending / total) * 100.0
 
-def date_difference():
-    date = datetime.date.day
+fp = open("data.txt", "r")
 
-total_expenses(expenses)
+data = fp.read()
+
+data_list = data.split('\n')
+
+print(data)
+
+exit()
+
+print("Spending During Co-op\n")
+
+for item in expenses:
+    print(item)
+
+print(f"\nTotal: ${calc_total_earnings()}")
